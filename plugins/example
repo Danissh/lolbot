@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+
+
+class Plugin:
+    vk = None
+    keys = [u'примерплагина', u'тестовыйплагин']
+    name = 'Пример плагина'
+	
+    def __init__(self, vk):
+        self.vk = vk
+        print(Plugin.name)
+
+    def call(self, msg, is_prefixed):
+        self.vk.respond(msg, {'message': u'Пример плагина'})

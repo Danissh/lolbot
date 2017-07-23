@@ -5,19 +5,14 @@ import random
 
 class Plugin:
     vk = None
-
+    keys = [u'сиськи', u'boobs']
+    name = 'Случайные сиськи'
+	
     def __init__(self, vk):
         self.vk = vk
-        print('Случайные сиськи')
+        print(Plugin.name)
 
-    def getkeys(self):
-        keys = [u'сиськи', u'boobs']
-        ret = {}
-        for key in keys:
-            ret[key] = self
-        return ret
-
-    def call(self, msg):
+    def call(self, msg, is_prefixed):
         answers = []
         answers.append(u"Сиськи поданы!")
         answers.append(u"Случайные сиськи!")
@@ -29,8 +24,8 @@ class Plugin:
         while isphoto is False:
             values = {
             # owner_id = ид группы
-                'owner_id': -45703579,
-                'offset': random.randint(1, 1985),
+                'owner_id': -73401695,
+                'offset': random.randint(1, 1252),
                 'count': 1
             }
 
@@ -47,7 +42,7 @@ class Plugin:
 
         attachment = 'photo' + owner_id + '_' + att_id + '_' + access_key
 
-        print attachment
+        print(attachment)
 
         self.vk.respond(msg, {'message': random.choice(answers),
             'attachment': attachment})

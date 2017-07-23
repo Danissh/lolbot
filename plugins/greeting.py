@@ -5,25 +5,20 @@ import random
 
 class Plugin:
     vk = None
-
+    keys = [u'приветствие', 'greeting', u'привет', u'голос', u'ку']
+    name = 'Приветствия'
+	
     def __init__(self, vk):
         self.vk = vk
-        print('Приветствия')
+        print(Plugin.name)
 
-    def getkeys(self):
-        keys = [u'приветствие', 'greeting', u'привет', u'голос', u'ку']
-        ret = {}
-        for key in keys:
-            ret[key] = self
-        return ret
-
-    def call(self, msg):
+    def call(self, msg, is_prefixed):
         greetings = []
 
         greetings.append(u'Я - чатбот')
         greetings.append(u'Кекеке')
         greetings.append(u'Запущен и готов служить')
         greetings.append(u'У контакта ужасный флуд-контроль, %username%')
-        greetings.append(u'Хуяк-хуяк и в продакшен')
+        greetings.append(u'Поцелуйте мой блестящий металлический зад')
 
         self.vk.respond(msg, {'message': random.choice(greetings)})
