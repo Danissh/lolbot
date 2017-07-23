@@ -43,4 +43,4 @@ LOLBOT
 
 Код распространяется под лицензией CC BY-NC - Creative Commons Attribution-NonCommercial 4.0 International Public License (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
-Исходная версия от Андрея Викторова использовала DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2, December 2004. Как следствие, часть кода, оставшаяся в этом форке неизименной, может быть использована в соответствии с этой лицензией.
+Исходная версия от Андрея Викторова использовала DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2, December 2004. Как следствие, часть кода, оставшаяся в этом форке неизменной, может быть использована в соответствии с этой лицензией.
